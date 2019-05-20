@@ -13,7 +13,7 @@ def parse(tokenized):
                                stdin=PIPE,
                                stdout=PIPE,
                                stderr=PIPE)
-    out, err = process.communicate(tokenized)
+    out, err = process.communicate(tokenized.decode("utf-8"))
     
     if err:
         # ignores info C&C writes to stderr
@@ -38,7 +38,7 @@ def box(parsed):
                                stdin=PIPE,
                                stdout=PIPE,
                                stderr=PIPE)
-    out, err = process.communicate(parsed)
+    out, err = process.communicate(parsed.decode("utf-8"))
 
     if err:
         # we ignore an error Boxer throws wrongly
