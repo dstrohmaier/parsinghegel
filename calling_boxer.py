@@ -50,6 +50,6 @@ def box(parsed):
 
 
 def box_sent(sent):
-    tokenized = nltk.word_tokenize(sent)
+    tokenized = nltk.word_tokenize(sent).join(" ")
     parsed = parse(tokenized)
     boxed = box(parsed)
