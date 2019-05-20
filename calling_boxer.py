@@ -8,11 +8,11 @@ def parse(tokenized):
     
     parser = ['parser/bin/candc'] # depends on installation
 
-    process = subprocess.Popen(parser + parser_options,
+    process = Popen(parser + parser_options,
                                shell=False,
-                               stdin=subprocess.PIPE,
-                               stdout=subprocess.PIPE,
-                               stderr=subprocess.PIPE)
+                               stdin=PIPE,
+                               stdout=PIPE,
+                               stderr=PIPE)
     out, err = process.communicate(tokenized)
     
     if err:
@@ -33,11 +33,11 @@ def box(parsed):
                      '--format', 'xml']
 
 
-    process = subprocess.Popen(boxer + boxer_options,
+    process = Popen(boxer + boxer_options,
                                shell=False,
-                               stdin=subprocess.PIPE,
-                               stdout=subprocess.PIPE,
-                               stderr=subprocess.PIPE)
+                               stdin=PIPE,
+                               stdout=PIPE,
+                               stderr=PIPE)
     out, err = process.communicate(parsed)
 
     if err:
