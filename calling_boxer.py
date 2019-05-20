@@ -4,8 +4,8 @@ import logging
 import nltk
 
 def parse(tokenized):
-    parser_options = ['--models',
-                      'parser/models/boxer'] # depends on installation
+    parser_options = ['--models', 'parser/models/boxer',
+                      '--candc-printer', 'boxer'] # depends on installation
     
     parser = ['parser/bin/candc'] # depends on installation
 
