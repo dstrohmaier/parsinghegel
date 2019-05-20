@@ -17,7 +17,7 @@ def parse(tokenized):
     
     if err:
         # ignores info C&C writes to stderr
-        if not err.startswith('#'):
+        if not err.startswith(b'#'):
             log.error('Parser error: {0}'.format(err))
     parsed = out.decode('utf-8').encode("utf-8")
     return parsed
