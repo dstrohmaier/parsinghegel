@@ -19,7 +19,7 @@ def parse(tokenized):
         # ignores info C&C writes to stderr
         if not err.startswith(b'#'):
             log.error('Parser error: {0}'.format(err))
-    parsed = out.decode('utf-8').encode("utf-8")
+    parsed = out.decode('utf-8')
     return parsed
 
 
@@ -53,3 +53,4 @@ def box_sent(sent):
     tokenized = " ".join(nltk.word_tokenize(sent))
     parsed = parse(tokenized)
     boxed = box(parsed)
+    return boxed
