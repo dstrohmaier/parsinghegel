@@ -30,7 +30,8 @@ def box(parsed):
     boxer_options = ['--stdin',
                      '--instantiate', 'true',
                      '--resolve', 'true',
-                     '--semantics', 'drt',
+                     '--semantics', 'drs',
+                     '--theory', 'drt',
                      '--roles', 'verbnet',
                      '--format', 'xml']
 
