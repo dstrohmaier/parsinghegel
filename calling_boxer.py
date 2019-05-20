@@ -1,5 +1,6 @@
 from subprocess import Popen, PIPE
 
+import logging
 import nltk
 
 def parse(tokenized):
@@ -18,7 +19,7 @@ def parse(tokenized):
     if err:
         # ignores info C&C writes to stderr
         if not err.startswith(b'#'):
-            log.error('Parser error: {0}'.format(err))
+            logging.error('Parser error: {0}'.format(err))
     parsed = out.decode('utf-8')
     return parsed
 
@@ -42,8 +43,8 @@ def box(parsed):
 
     if err:
         # we ignore an error Boxer throws wrongly
-        if not "No source location" in err:
-            log.error('Boxer error: {0}'.format(err))
+        if not b"No source location" in err:
+            logging.error('Boxer error: {0}'.format(err))
     boxed = out.decode('utf-8').encode("utf-8")
 
     return boxed
