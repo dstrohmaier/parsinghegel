@@ -2,7 +2,7 @@ from pathlib import Path
 
 from calling_boxer import box_sent
 
-BASE_DIR = Path(__file__).resolve().parent()
+BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR.join("data")
 
 
