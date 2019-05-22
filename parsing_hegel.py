@@ -9,9 +9,8 @@ DATA_DIR = BASE_DIR.joinpath("data")
 def parse_intro():
     intro_path = DATA_DIR.joinpath("first_sentences_intro.txt")
     with intro_path.open(mode="r") as in_file: # accommodates versions <3.6
-        text = in_file.read() # It is just one line
+        parse_results = [box_sent(line) for line in in_file]
 
-    intro_parsed = box_sent(text)
     return intro_parsed
 
 
