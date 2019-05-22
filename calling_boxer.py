@@ -53,8 +53,8 @@ def box(parsed):
 
 
 def box_sent(sent):
-    sent += sent + "\n\n<EOF>" # trying a dirty bug fix for Boxer here
     tokenized = " ".join(nltk.word_tokenize(sent))
+    tokenized += "\n<EOF>"
     print(tokenized)
     parsed = parse(tokenized)
     print(parsed)
