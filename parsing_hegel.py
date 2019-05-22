@@ -16,5 +16,6 @@ def parse_intro():
 
 
 if __name__ == "__main__":
-    print(parse_intro())
+    for parsed_sent in parse_intro():
+        print(parsed_sent.decode("utf-8"))
     
