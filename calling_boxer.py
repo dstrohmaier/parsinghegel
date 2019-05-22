@@ -55,8 +55,8 @@ def box(parsed):
 def box_sent(sent):
     tokenized = " ".join(nltk.word_tokenize(sent))
     tokenized += "\n<EOF>"
-    print(tokenized)
+    #print(tokenized)
     parsed = parse(tokenized)
-    print(parsed)
+    #print(parsed)
     boxed = box(parsed)
     return boxed
