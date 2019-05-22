@@ -7,7 +7,7 @@ DATA_DIR = BASE_DIR.joinpath("data")
 
 
 def parse_intro():
-    intro_path = DATA_DIR.join("first_sentences.txt")
+    intro_path = DATA_DIR.joinpath("first_sentences.txt")
     with open(intro_path) as in_file:
         text = in_file.read() # It is just one line
 
