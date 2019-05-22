@@ -17,4 +17,5 @@ def parse_intro():
 
 
 if __name__ == "__main__":
-    parse_intro()
+    print(parse_intro())
+    
