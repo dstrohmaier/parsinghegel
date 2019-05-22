@@ -11,7 +11,7 @@ def parse_intro():
     with intro_path.open(mode="r") as in_file: # accommodates versions <3.6
         parse_results = [box_sent(line) for line in in_file]
 
-    return intro_parsed
+    return parse_results
 
 
 
