@@ -105,6 +105,7 @@ venv.bak/
 
 # Emacs
 *.py~
+*.py#
 
 # parser
 parser/
