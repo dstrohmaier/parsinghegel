@@ -1,11 +1,11 @@
 # Parsing Hegel
 
 
-In another life I read a lot of Hegel, now a mere side-interest. Despite the assurances of my former supervisor Bob Stern to the contrary, Georg Wilhelm Friedrich Hegel's work is infamously opaque. Making sense of his *Phenomenology of Spirit* poses a considerable challenge, and those who claim to understand him often end up with rather different readings.
+In another life I read a lot of Hegel, now a mere side-interest of mine. Despite the assurances of my former supervisor Bob Stern to the contrary, Georg Wilhelm Friedrich Hegel's work is infamously opaque. Making sense of his *Phenomenology of Spirit* poses a considerable challenge, and those who claim to understand him often end up with rather different readings.
 
 In my current life, I am finishing up an MPhil in Advanced Computer Science. My project is in the area of computational semantics where we seek to make sense of expressions in natural language by automatically producing formal representations of their meaning. For this purpose, I am using the Boxer-parser, which uses Discourse Representation Theory (DRT).[0] DRT offers a fancy formalism for capturing action-sentences using a neo-Davidsonian event semantics. One benefit of this theory is that it allows us to represent the meaning in neat little boxes, hence the namer of the parser. The boxes specify a number of variables at the top and then contain conditions in the form of predicates below.
 
-If computational semantics enables us to make sense of natural language. Then why not use it to make Hegel approachable? Why not run Boxer on the *Phenomenology*? I can think of very good reasons to resist the idea, but not a single one of them kept  me from giving it a try with a few sentences. So I just went ahead and adapted a tiny sliverof  what I have learned during my MPhil to turn the first sentence of the *Phenomenology* into a formal representation.
+If computational semantics enables us to make sense of natural language, then why not use it to make Hegel approachable? Why not run Boxer on the *Phenomenology*? I can think of very good reasons to resist the idea for the whole book, but not a single one of them kept me from giving it a try with a few sentences. So I just went ahead and adapted a tiny sliver of what I have learned during my MPhil to turn the first sentence of the *Phenomenology* into a formal representation.
 
 The challenge should not be underestimated. The first two sentences read as follows:[1]
 
