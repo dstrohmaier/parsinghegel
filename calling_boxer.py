@@ -24,7 +24,7 @@ def parse(tokenized):
     return parsed
 
 
-def box(parsed, to_box="false", out_format="xml"):
+def box(parsed, out_format="xml"):
     boxer = ['parser/bin/boxer'] # depends on installation
     
     boxer_options = ['--stdin',
@@ -33,7 +33,6 @@ def box(parsed, to_box="false", out_format="xml"):
                      '--semantics', 'drs',
                      '--theory', 'drt',
                      '--roles', 'verbnet',
-                     '--box', to_box,
                      '--format', out_format]
 
 
@@ -61,6 +60,5 @@ def box_sent(sent):
     #print(parsed)
     boxed_xml = box(parsed)
     boxed_latex = box(parsed, out_format="latex")
-    boxed_box = box(parsed, to_box="true")
     
-    return boxed_xml, boxed_latex, boxed_box
+    return boxed_xml, boxed_latex
