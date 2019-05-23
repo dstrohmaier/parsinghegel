@@ -25,7 +25,7 @@ I want to suggest that Hegel's *Phenomenology* in fact works better with the neo
 
 If you generously fund me for four to five years, I will try to produce such representations for the whole of the *Phenomenology*. The decision whether that is a worthy investment of your money is up to you.
 
-
+---
 
 [0] Kamp, Hans, and Uwe Reyle. *From Discourse to Logic: Introduction to Modeltheoretic Semantics of Natural Language, Formal Logic and Discourse Representation Theory*. Studies in Linguistics and Philosophy 42. Dordrecht: Springer-Science+Business Media, B.V, 1993.
 
