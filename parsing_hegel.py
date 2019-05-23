@@ -16,7 +16,7 @@ def parse_intro():
 
 
 if __name__ == "__main__":
-    for i, (parsed_xml, parsed_latex) in enumerat(parse_intro()):
+    for i, (parsed_xml, parsed_latex) in enumerate(parse_intro()):
         print("Sentence #{}".format(i)) # Would be nicer with f-string, but need to accommodate python versions <3.6
         print("\nXML-output")
         print(parsed_xml.decode("utf-8"))

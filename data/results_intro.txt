@@ -1,3 +1,6 @@
+Sentence #0
+
+XML-output
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xdrs-output SYSTEM "src/data/boxer/xdrs.dtd">
 <xdrs-output version="boxer v1.00 (unix build on 23 March 2019, 14:15:05)">
@@ -1534,8 +1537,162 @@
 </xdrs>
 </xdrs-output>
 
+
+LaTex-output
+\documentclass[10pt]{article}
+
+\usepackage{a4wide}
+
+\newcommand{\drs}[2]
+{
+   \begin{tabular}{|l|}
+   \hline
+   #1
+   \\
+   ~ \vspace{-2ex} \\
+   \hline
+   ~ \vspace{-2ex} \\
+   #2
+   \\
+   \hline
+   \end{tabular}
+}
+
+\parindent 0pt
+\parskip 10pt
+
+\begin{document}
+\sf \tiny
+
+\section*{It is customary to preface a work with an explanation of the author 's aim , why he wrote the book , and the relationship in which he believes it to stand to other earlier or contemporary treatises on the same subject . In the case of a philosophical work , however , such an explanation seems not only superfluous but , in view of the nature of the subject-matter , even inappropriate and misleading . }
+(\drs{x18 x17 s3 x13 x12 x10 x7 x9 x8 x2}{n1subjectC45matter(x18)\\[1pt]
+n1nature(x17)\\[1pt]
+n1case(x2)\\[1pt]
+n1relationship(x9)\\[1pt]
+n1subject(x13)\\[1pt]
+a1same(s3)\\[1pt]
+r1Theme(s3,x13)\\[1pt]
+\drs{s6}{n1treatise(x12)\\[1pt]
+r1more(s6)\\[1pt]
+a1early(s6)\\[1pt]
+r1Theme(s6,x12)\\[-3pt]}$\lor$\drs{s7}{n1treatise(x12)\\[1pt]
+a1contemporary(s7)\\[1pt]
+r1Theme(s7,x12)\\[-3pt]}\\[9pt]
+n12thing(x8)\\[1pt]
+n2male(x7)\\[1pt]
+n1book(x10)\\[1pt]
+n1aim(x8)\\[1pt]
+r1of(x8,x7)\\[1pt]
+n1author(x7)\\[-3pt]};\drs{s2 x1 p1 s1}{$\lnot$\drs{x16 p5 e6 x15 s8 p4 e5 x14}{r1however(e6)\\[1pt]
+r1only(e6)\\[1pt]
+r1in(e6,x16)\\[1pt]
+r1of(x16,x17)\\[1pt]
+r1of(x17,x18)\\[1pt]
+n1view(x16)\\[1pt]
+p5:\drs{s12 s11}{r1Theme(s12,x15)\\[1pt]
+a1misleading(s12)\\[1pt]
+r1even(s11)\\[1pt]
+r1Theme(s11,x15)\\[1pt]
+a1inappropriate(s11)\\[-3pt]}\\[9pt]
+r1Topic(e6,p5)\\[1pt]
+r1Agent(e6,x15)\\[1pt]
+v1seem(e6)\\[1pt]
+r1such(x15)\\[1pt]
+n1explanation(x15)\\[1pt]
+r1for(e5,s8)\\[1pt]
+r1Theme(s8,x14)\\[1pt]
+a1superfluous(s8)\\[1pt]
+r1however(e5)\\[1pt]
+r1only(e5)\\[1pt]
+p4:\drs{s10 s9}{r1Theme(s10,x14)\\[1pt]
+a1misleading(s10)\\[1pt]
+r1even(s9)\\[1pt]
+r1Theme(s9,x14)\\[1pt]
+a1inappropriate(s9)\\[-3pt]}\\[9pt]
+r1Topic(e5,p4)\\[1pt]
+r1Agent(e5,x14)\\[1pt]
+v1seem(e5)\\[1pt]
+r1such(x14)\\[1pt]
+n1explanation(x14)\\[-3pt]}\\[9pt]
+r1in(s1,x2)\\[1pt]
+r1of(x2,x1)\\[1pt]
+n1work(x1)\\[1pt]
+a1philosophical(s2)\\[1pt]
+r1Theme(s2,x1)\\[1pt]
+r1Topic(s1,p1)\\[1pt]
+p1:\drs{e2 p3 p2 x6 x5 e1 x4 x3}{r1Patient(e1,x5)\\[1pt]
+r1subset\_of(x9,x5)\\[1pt]
+r1in(e2,x9)\\[1pt]
+r1Topic(e2,p3)\\[1pt]
+r1Recipient(e2,x8)\\[1pt]
+r1Agent(e2,x7)\\[1pt]
+v1believe(e2)\\[1pt]
+p3:\drs{x11 e4}{r1on(e4,x13)\\[1pt]
+r1Agent(e4,x11)\\[1pt]
+$\lnot$\drs{}{x11 = x12\\[-3pt]}\\[9pt]
+\drs{s4}{n1treatise(x11)\\[1pt]
+r1more(s4)\\[1pt]
+a1early(s4)\\[1pt]
+r1Theme(s4,x11)\\[-3pt]}$\lor$\drs{s5}{n1treatise(x11)\\[1pt]
+a1contemporary(s5)\\[1pt]
+r1Theme(s5,x11)\\[-3pt]}\\[9pt]
+r1Agent(e4,x8)\\[1pt]
+v1stand(e4)\\[-3pt]}\\[9pt]
+r1subset\_of(x6,x5)\\[1pt]
+p2:\drs{e3}{r1Goal(e3,x10)\\[1pt]
+r1Agent(e3,x7)\\[1pt]
+v1write(e3)\\[-3pt]}\\[9pt]
+r1why(x6,p2)\\[1pt]
+r1of(x6,x8)\\[1pt]
+n1explanation(x6)\\[1pt]
+r1Theme(e1,x4)\\[1pt]
+r1Agent(e1,x3)\\[1pt]
+v1preface(e1)\\[1pt]
+n1work(x4)\\[-3pt]}\\[9pt]
+r1Theme(s1,x1)\\[1pt]
+a1customary(s1)\\[1pt]
+n12thing(x1)\\[-3pt]})
+
+\end{document}
+
+********
+
+Sentence #1
+
+XML-output
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xdrs-output SYSTEM "src/data/boxer/xdrs.dtd">
 <xdrs-output version="boxer v1.00 (unix build on 23 March 2019, 14:15:05)">
 </xdrs-output>
+
+
+LaTex-output
+\documentclass[10pt]{article}
+
+\usepackage{a4wide}
+
+\newcommand{\drs}[2]
+{
+   \begin{tabular}{|l|}
+   \hline
+   #1
+   \\
+   ~ \vspace{-2ex} \\
+   \hline
+   ~ \vspace{-2ex} \\
+   #2
+   \\
+   \hline
+   \end{tabular}
+}
+
+\parindent 0pt
+\parskip 10pt
+
+\begin{document}
+\sf \tiny
+
+\end{document}
+
+********
 
