@@ -13,7 +13,6 @@ The challenge should not be underestimated. The first two sentences read as foll
 
 This is not exactly "The dog chases the car", an example much more adapted to the powers of Boxer. But I have to admit that Boxer surprised me. It managed to produce a representation of the first two sentences:[2]
 
-![Alt text](https://raw.githubusercontent.com/dstrohmaier/parsinghegel/master/data/box_first_sent.svg?sanitize=true)
 <img src="https://raw.githubusercontent.com/dstrohmaier/parsinghegel/master/data/box_first_sent.svg?sanitize=true">
 
 Despite the intuitive character of the boxes, it is not exactly easy to make sense of the jumble. Boxer seems to have produced to less than complete parses, hence the repetition of certain elements (e.g. "contemporary treatise"), but I am honestly impressed that I got anything at all. In fact, Boxer did not present a parse when offered the third sentence:
