@@ -15,7 +15,7 @@ This is not exactly "The dog chases the car", an example much more adapted to th
 
 <img src="https://raw.githubusercontent.com/dstrohmaier/parsinghegel/master/data/box_first_sent.svg?sanitize=true">
 
-Despite the intuitive character of the boxes, it is not exactly easy to make sense of the jumble. Boxer seems to have produced to less than complete parses, hence the repetition of certain elements (e.g. "contemporary treatise"), but I am honestly impressed that I got anything at all. In fact, Boxer did not present a parse when offered the third sentence:
+Despite the intuitive character of the boxes, it is not exactly easy to make sense of the jumble. Boxer seems to have produced less than complete parses, hence the repetition of certain elements (e.g. "contemporary treatise"), but I am honestly impressed that I got anything at all. In fact, Boxer did not present a parse when offered the third sentence:
 
 "For whatever might appropriately be said about philosophy in a preface - say a historical statement of the main drift and the point of view, the general content and results, a string of random assertions and assurances about truth - none of this can be accepted as the way in which to expound philosophical truth. "
 
